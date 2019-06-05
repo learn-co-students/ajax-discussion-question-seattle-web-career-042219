@@ -33,6 +33,7 @@ function addUser(user) {
   let userPhone = user.phone 
   let userCell = user.cell
   let userDob = user.dob.date
+  let userImage = user.picture.thumbnail
 //name and email
   let fullname = document.getElementById("fullname")
   fullname.textContent = name;
@@ -58,7 +59,10 @@ function addUser(user) {
   //dob
   let dob = document.getElementById("date_of_birth")
   dob.textContent = userDob
+ //image
 
+ let image = document.getElementById('profile_picture')
+ image.src = userImage
 
 }
 
